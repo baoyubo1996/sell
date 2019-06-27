@@ -9,11 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.swing.*;
-
 import java.math.BigDecimal;
 
-import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ProductServiceImplTest {
@@ -37,8 +34,8 @@ public class ProductServiceImplTest {
     @Test
     public void save() throws Exception{
         ProductInfo productInfo = new ProductInfo();
-        productInfo.setProductId("123457");
-        productInfo.setProductName("皮皮虾");
+        productInfo.setProductId("1234568");
+        productInfo.setProductName("皮皮虾1");
         productInfo.setProductPrice(new BigDecimal(3.2));
         productInfo.setProductStock(100);
         productInfo.setProductDescription("很好吃的虾");

@@ -12,7 +12,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
 
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -38,7 +37,7 @@ public class OrderMasterRepositoryTest {
     public void findByBuyerOpenid() throws Exception {
         PageRequest request =PageRequest.of(0, 3);
 
-        Page<OrderMaster> result = repository.findByBuyerOpenid("123", request);
+        Page<OrderMaster> result = repository.findByBuyerOpenid("1101110", request);
         System.out.println(result.getTotalElements());
       // Assert.assertNotEquals(0, result.getTotalElements());
     }

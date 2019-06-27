@@ -29,8 +29,7 @@ public class PayServiceImpl implements PayService {
 
     private static final String ORDER_NAME = "微信点餐订单";
 
-    @Autowired
-    private BestPayServiceImpl bestPayService;
+    private BestPayServiceImpl bestPayService = new BestPayServiceImpl();
 
     @Autowired
     private OrderService orderService;
